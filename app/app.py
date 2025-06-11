@@ -37,8 +37,7 @@ def create_app():
     # Perform /sessions call
     @app.route('/api/sessions', methods=['POST'])
     def sessions():
-          host_url = request.host_url 
-        # host_url = "https://8949b923f75af6b1-AdyenTechSupportIndia-checkout-live.adyenpayments.com/checkout/v71"
+        host_url = request.host_url 
 
         return adyen_sessions(host_url)
 
@@ -141,5 +140,3 @@ if __name__ == '__main__':
 
     logging.info(f"Running on http://localhost:{get_port()}")
     web_app.run(debug=True, port=get_port(), host='0.0.0.0')
-
-
