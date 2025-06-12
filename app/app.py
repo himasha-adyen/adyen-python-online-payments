@@ -41,7 +41,7 @@ def create_app():
         print(host_url)
 
         # return adyen_sessions(host_url)
-        return adyen_sessions("abc")
+        return adyen_sessions(host_url)
 
     @app.route('/result/success', methods=['GET'])
     def checkout_success():
