@@ -40,7 +40,8 @@ def create_app():
         host_url = "https://8949b923f75af6b1-AdyenTechSupportIndia-checkout-live.adyenpayments.com/checkout/v71" 
         print(host_url)
 
-        return adyen_sessions(host_url)
+        # return adyen_sessions(host_url)
+        return adyen_sessions("abc")
 
     @app.route('/result/success', methods=['GET'])
     def checkout_success():
