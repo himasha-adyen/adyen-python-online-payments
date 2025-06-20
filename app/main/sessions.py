@@ -1,7 +1,7 @@
 import Adyen
 import json
 import uuid
-from main.config import get_adyen_api_key, get_adyen_merchant_account
+from main.config import get_adyen_api_key, get_adyen_merchant_account, get_adyen_url_prefix
 
 '''
 Create Payment Session by calling /sessions endpoint
