@@ -17,6 +17,13 @@ def get_adyen_merchant_account():
 
     return adyen_merchant_account
 
+def get_adyen_url_prefix():
+    adyen_url_prefix = os.environ.get("ADYEN_URL_PREFIX")
+
+    if not adyen_url_prefix:
+        raise Exception("Missing ADYEN_URL_PREFIX in .env")
+
+    return adyen_url_prefix
 
 def get_adyen_api_key():
     adyen_api_key = os.environ.get("ADYEN_API_KEY")
